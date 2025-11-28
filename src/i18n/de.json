@@ -1,0 +1,31 @@
+{
+  "site": {
+    "title": "Adeca Logistics",
+    "description": "End-to-End-Logistik und Supply-Chain-Lösungen."
+  },
+  "layout": {
+    "skipToContent": "Zum Inhalt springen",
+    "language": "Sprache"
+  },
+  "nav": {
+    "home": "Startseite",
+    "services": "Leistungen",
+    "about": "Über uns",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "kicker": "Statisches Template nach dem Ekol-Erlebnis",
+    "title": "Modulare, mehrsprachige Basis für globale Logistik",
+    "lede": "Eine statische, sichere und schnelle Seite, die Look & Feel von Ekol beibehält."
+  },
+  "footer": {
+    "tagline": "End-to-End-Logistik und Supply-Chain-Lösungen.",
+    "copyright": "Adeca Logistics. Alle Rechte vorbehalten."
+  },
+  "about": {
+    "title": "Über Adeca Logistics",
+    "description": "Modulare, mehrsprachige Logistik-Erfahrung mit Ekol-Wurzeln.",
+    "heading": "Ekol-Erbe, digitale Zukunft",
+    "body": "Adeca Logistics verbindet Ekol-Erfahrung mit einer sicheren, schnellen und modularen digitalen Infrastruktur. Wir bieten flexible, mehrsprachige Unterstützung für globale Logistikoperationen."
+  }
+}
