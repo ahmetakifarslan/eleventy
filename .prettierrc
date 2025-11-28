@@ -1,0 +1,21 @@
+{
+  "printWidth": 300,
+  "tabWidth": 2,
+  "useTabs": false,
+  "singleQuote": false,
+  "htmlWhitespaceSensitivity": "ignore",
+  "bracketSameLine": true,
+  "jsxBracketSameLine": true,
+  "embeddedLanguageFormatting": "off",
+
+  "singleAttributePerLine": false,
+  "overrides": [
+    {
+      "files": "*.html",
+      "options": {
+        "parser": "html",
+        "singleAttributePerLine": false
+      }
+    }
+  ]
+}
