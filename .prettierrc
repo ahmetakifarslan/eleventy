@@ -7,7 +7,6 @@
   "bracketSameLine": true,
   "jsxBracketSameLine": true,
   "embeddedLanguageFormatting": "off",
-
   "singleAttributePerLine": false,
   "overrides": [
     {
@@ -17,5 +16,7 @@
         "singleAttributePerLine": false
       }
     }
-  ]
+  ],
+  "plugins": ["prettier-plugin-organize-attributes"],
+  "attributeGroups": ["$id", "$class", "$DEFAULT"]
 }
