@@ -3,6 +3,7 @@ layout: "layouts/base.html"
 permalink: "/index.html"
 title: "Anasayfa"
 ---
+
 <div class="container main-content" role="main" style="--nectar-sticky-top-distance: 165px;">
   <div class="row">
     <div
@@ -20,19 +21,8 @@ title: "Anasayfa"
       <div class="video-color-overlay row-bg-layer" data-color="#2b323a" style="opacity: 0.7; background-color: rgb(43, 50, 58);"></div>
       <div class="nectar-video-wrap row-bg-layer" data-bg-alignment="" style="opacity: 1; width: 100%; height: 100%;">
         <div class="nectar-video-inner">
-          <template shadowrootmode="open">
-            <div id="controller" style="top: 0px; left: 0px; opacity: 0.3;">
-              <span class="draggable" data-action="drag" style="font-size: 14px;">1.00</span>
-              <span id="controls" style="font-size: 14px; line-height: 14px;">
-                <button class="rw" data-action="rewind">«</button>
-                <button data-action="slower">−</button>
-                <button data-action="faster">+</button>
-                <button class="rw" data-action="advance">»</button>
-                <button class="hideButton" data-action="display">×</button>
-              </span>
-            </div>
-          </template>
-          <video autoplay="" class="nectar-video-bg" height="700" loop="" muted playsinline preload="auto" style="visibility: visible; opacity: 1;" width="1800"><source src="/assets/media/ekol_wh_auto_website.mp4" type="video/mp4" /></video>
+          <vsc-controller class="vsc-controller" style="top: 0px; left: 0px; position: absolute !important; z-index: 9999999 !important;"></vsc-controller>
+          <video class="nectar-video-bg" width="1800" height="700" preload="auto" loop="" autoplay="" muted="" playsinline="" style="visibility: visible; opacity: 1;"><source src="/assets/media/ekol_wh_auto_website.mp4" type="video/mp4" /></video>
         </div>
       </div>
       <div class="row_col_wrap_12 col span_12 light left">
@@ -749,19 +739,8 @@ title: "Anasayfa"
       <div class="video-color-overlay row-bg-layer" data-color="" style="opacity: 0.7;"></div>
       <div class="nectar-video-wrap row-bg-layer" data-bg-alignment="" style="opacity: 1; width: 100%; height: 100%;">
         <div class="nectar-video-inner" style="height: 1458.19px;">
-          <template shadowrootmode="open">
-            <div id="controller" style="top: 0px; left: 0px; opacity: 0.3;">
-              <span class="draggable" data-action="drag" style="font-size: 14px;">1.00</span>
-              <span id="controls" style="font-size: 14px; line-height: 14px;">
-                <button class="rw" data-action="rewind">«</button>
-                <button data-action="slower">−</button>
-                <button data-action="faster">+</button>
-                <button class="rw" data-action="advance">»</button>
-                <button class="hideButton" data-action="display">×</button>
-              </span>
-            </div>
-          </template>
-          <video autoplay="" class="nectar-video-bg translate" height="700" loop="" muted playsinline preload="auto" style="will-change: auto; visibility: visible; opacity: 1;" width="1800">
+          <vsc-controller class="vsc-controller vsc-show" style="top: 519.432px; left: 0px; position: absolute !important; z-index: 9999999 !important;"></vsc-controller>
+          <video class="nectar-video-bg translate" width="1800" height="700" preload="auto" loop="" autoplay="" muted="" playsinline="" style="will-change: transform; visibility: visible; transform: translate3d(0px, 307.164px, 0px) scale(1.005); opacity: 1;">
             <source src="/assets/media/ekol_alvarium_short_video.mov" type="video/mp4" />
           </video>
         </div>
