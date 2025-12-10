@@ -1,0 +1,9 @@
+
+{% assign formPage = collections.formPage | first %}
+<a target="_blank" rel="noopener" href="{{ formPage.url  }}">
+    <span class="menu-title-text">
+    {% for char in "Teklif Al" split: '' %}
+        <span class="char">{{char}}</span>
+    {% endfor %}
+    </span>
+</a>

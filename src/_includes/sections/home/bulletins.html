@@ -1,0 +1,47 @@
+<div id="fws_69329f233c35f" data-column-margin="default" data-midnight="dark" class="wpb_row vc_row-fluid vc_row" style="padding-top: 0px; padding-bottom: 0px; ">
+  <div class="row-bg-wrap" data-bg-animation="none" data-bg-animation-delay="" data-bg-overlay="false">
+    <div class="inner-wrap row-bg-layer">
+      <div class="row-bg viewport-desktop" style=""></div>
+    </div>
+  </div>
+  <div class="row_col_wrap_12 col span_12 dark left">
+    <div class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding inherit_tablet inherit_phone " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
+      <div class="vc_column-inner">
+        <div class="wpb_wrapper">
+          <a href="https://www.ekol.com/basin-bultenleri" target="_self">
+            <div
+              class="nectar-split-heading  font_size_2-5vw font_line_height_2px "
+              data-align="default"
+              data-m-align="inherit"
+              data-text-effect="default"
+              data-animation-type="line-reveal-by-space"
+              data-animation-delay="0"
+              data-animation-offset=""
+              data-m-rm-animation=""
+              data-stagger="true"
+              data-custom-font-size="true"
+              style="font-size: 2.5vw; line-height: 2.75vw;">
+              <h2 style="max-width: 80%; color: #000000;">{{ "home.bulletins.h2" | t:locale }}</h2>
+            </div>
+          </a>
+          <div class="row">
+            <div class="post-area col  span_12 col_last masonry meta_overlaid  " data-ams="" data-remove-post-date="" data-remove-post-author="" data-remove-post-comment-number="" data-remove-post-nectar-love="">
+              <div class="posts-container" data-load-animation="perspective">
+                {% assign posts = "home.bulletins.posts" | t: locale %} 
+                {% for post in posts %} 
+                    {% include "components/post-card.html" 
+                    postTitle: post.title 
+                    author: post.author 
+                    date: post.date 
+                    href: post.href 
+                    imgUrl:"https://fastly.picsum.photos/id/794/200/200.jpg?hmac=qNLJvkiBmg4TyCSCwU__daf9sb5La0_1eRzJewRgIyU"
+                %} 
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

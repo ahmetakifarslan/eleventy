@@ -1,0 +1,421 @@
+---
+pageConfig:
+  type: 5
+lang: tr
+layout: layouts/main-layout.html
+title: Contact
+eleventyNavigation:
+  key: tr-contact
+  title: İletişim
+  order: 5
+---
+{% assign brand = globals.brand %}
+<div class="container main-content" role="main">
+  <div class="row">
+    <div id="fws_6932dee9bd0fb" data-column-margin="default" data-midnight="dark" class="wpb_row vc_row-fluid vc_row top-level full-width-content vc_row-o-equal-height vc_row-flex vc_row-o-content-top" style="padding-top: 0px; padding-bottom: 0px; ">
+      <div class="row-bg-wrap" data-bg-animation="none" data-bg-animation-delay="" data-bg-overlay="false">
+        <div class="inner-wrap row-bg-layer">
+          <div class="row-bg viewport-desktop using-bg-color" style="background-color: #f0f2f6; "></div>
+        </div>
+      </div>
+      <div class="row_col_wrap_12 col span_12 dark left">
+        <div class="vc_col-sm-6 wpb_column column_container vc_column_container col no-extra-padding inherit_tablet inherit_phone " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
+          <div class="vc_column-inner">
+            <div class="wpb_wrapper">
+              <div class="nectar-google-map" style="height: 100vh; position: relative; overflow: hidden;">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.745320438675!2d28.90510849544542!3d41.03082749746903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cabb1917bad099%3A0x289f155396a5e102!2sAdeca%20Logistics%20%7C%20Genel%20Merkez%20(HQ)!5e0!3m2!1str!2str!4v1765276923328!5m2!1str!2str"
+                  width="100%"
+                  height="100%"
+                  style="border:0;"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          style="margin-top: 100px; "
+          class="vc_col-sm-6 wpb_column column_container vc_column_container col padding-7-percent inherit_tablet inherit_phone "
+          data-using-bg="true"
+          data-padding-pos="all"
+          data-has-bg-color="true"
+          data-bg-color="#f0f2f6"
+          data-bg-opacity="1"
+          data-animation=""
+          data-delay="0">
+          <div class="vc_column-inner">
+            <div class="column-bg-overlay-wrap column-bg-layer" data-bg-animation="none"><div class="column-bg-overlay" style="opacity: 1; background-color: #f0f2f6;"></div></div>
+            <div class="wpb_wrapper">
+              <div
+                class="nectar-split-heading markup-generated animated-in"
+                data-align="left"
+                data-m-align="left"
+                data-text-effect="default"
+                data-animation-type="line-reveal-by-space"
+                data-animation-delay="0"
+                data-animation-offset=""
+                data-m-rm-animation=""
+                data-stagger=""
+                data-custom-font-size="false">
+                <h1 style=" color: #55565a;" aria-label="İletişim ">
+                  <span><span class="inner" style="transform: translate(0px, 0px); opacity: 1;">İletişim</span></span>
+                </h1>
+              </div>
+              <div class="wpb_text_column wpb_content_element ">
+                <div class="wpb_wrapper">
+                  <h3>{{ brand.adress.title }}</h3>
+                  <p>
+                    {{brand.adress.street}} {{brand.adress.street2}}
+                    <br />
+                    {{ brand.adress.district}}/{{brand.adress.city}}
+                  </p>
+                </div>
+              </div>
+
+              <div class="nectar-cta  alignment_tablet_default alignment_phone_default display_tablet_inherit display_phone_inherit has-icon " data-color="default" data-using-bg="false" data-display="block" data-style="underline" data-alignment="left" data-text-color="std">
+                <p>
+                  <span class="link_wrap">
+                    <i class="fa fa-map-o"></i>
+                    <a target="_blank" class="link_text" role="button" href="{{ brand.adress.googleMapLink }}">Google haritası için tıklayınız.</a>
+                  </span>
+                </p>
+              </div>
+              <div id="fws_693942d49b7d9" data-midnight="" data-column-margin="default" class="wpb_row vc_row-fluid vc_row inner_row" style="">
+                <div class="row-bg-wrap"><div class="row-bg"></div></div>
+                <div class="row_col_wrap_12_inner col span_12  left" style="min-height: 0px;">
+                  <div class="vc_col-sm-4 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0" style="min-height: 0px;">
+                    <div class="vc_column-inner">
+                      <div class="wpb_wrapper">
+                        <div class="nectar-cta  alignment_tablet_default alignment_phone_default display_tablet_inherit display_phone_inherit has-icon " data-color="default" data-using-bg="false" data-display="block" data-style="underline" data-alignment="left" data-text-color="std">
+                          <h6>
+                            <span class="link_wrap">
+                              <i class="fa fa-briefcase"></i>
+                              <a target="_blank" class="link_text" role="button" href="mailto:{{brand.email}}">{{brand.email}}</a>
+                            </span>
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="vc_col-sm-4 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0" style="min-height: 0px;">
+                    <div class="vc_column-inner">
+                      <div class="wpb_wrapper">
+                        <div class="nectar-cta  alignment_tablet_default alignment_phone_default display_tablet_inherit display_phone_inherit has-icon " data-color="default" data-using-bg="false" data-display="block" data-style="underline" data-alignment="left" data-text-color="std">
+                          <h6>
+                            <span class="link_wrap">
+                              <i class="fa fa-phone"></i>
+                              <a class="link_text" role="button" href="tel:{{brand.phone}}">{{brand.phone}}</a>
+                            </span>
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="vc_col-sm-4 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0" style="min-height: 0px;">
+                    <div class="vc_column-inner">
+                      <div class="wpb_wrapper"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="wpb_text_column wpb_content_element ">
+                <div class="wpb_wrapper">
+                  <p>
+                    <strong>Ekol Lojistik A.Ş.</strong>
+                    <br />
+                    <strong>Mersis No:</strong>
+                    330001260200018
+                    <br />
+                    <strong>Ticaret Sicil No:</strong>
+                    261597
+                    <br />
+                    <strong>Vergi Kimlik No:</strong>
+                    3300012602
+                    <br />
+                    <strong>Vergi Dairesi:</strong>
+                    Anadolu Kurumlar Vergi Dairesi Müdürlüğü
+                  </p>
+                </div>
+              </div> -->
+
+              <div id="fws_693942d49ce6d" data-midnight="" data-column-margin="default" class="wpb_row vc_row-fluid vc_row inner_row" style="padding-top: 50px; ">
+                <div class="row-bg-wrap"><div class="row-bg"></div></div>
+                <div class="row_col_wrap_12_inner col span_12  left" style="min-height: 0px;">
+                  <div class="vc_col-sm-4 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0" style="min-height: 0px;">
+                    <div class="vc_column-inner">
+                      <div class="wpb_wrapper">
+                        <div class="nectar-cta  alignment_tablet_default alignment_phone_default display_tablet_inherit display_phone_inherit has-icon " data-color="default" data-using-bg="false" data-display="block" data-style="underline" data-alignment="left" data-text-color="std">
+                          <h6>
+                            <span class="link_wrap">
+                              <i class="fa fa-users"></i>
+                              {% assign careerPage = collections.career | first %}
+                              <a class="link_text" role="button" href="{{ careerPage.url }}">İş Başvuruları</a>
+                            </span>
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="vc_col-sm-4 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0" style="min-height: 0px;">
+                    <div class="vc_column-inner">
+                      <div class="wpb_wrapper">
+                        <div class="nectar-cta  alignment_tablet_default alignment_phone_default display_tablet_inherit display_phone_inherit has-icon " data-color="default" data-using-bg="false" data-display="block" data-style="underline" data-alignment="left" data-text-color="std">
+                          <h6>
+                            <span class="link_wrap">
+                              <i class="fa fa-comments-o"></i>
+                              {% assign formPage = collections.formPage | first %}
+                              <a target="_blank" class="link_text" role="button" href="{{formPage.url}}">İletişim Formu</a>
+                            </span>
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div
+      id="fws_6932dee9c1f60"
+      data-column-margin="20px"
+      data-midnight="dark"
+      data-top-percent="4%"
+      data-bottom-percent="4%"
+      class="wpb_row vc_row-fluid vc_row full-width-content vc_row-o-equal-height vc_row-flex vc_row-o-content-top  bottom_margin_0px zindex-set right_padding_5pct left_padding_5pct right_padding_phone_14px left_padding_phone_14px"
+      style="padding-top: calc(100vw * 0.04); padding-bottom: calc(100vw * 0.04);  z-index: 10;">
+      <div class="row-bg-wrap" data-bg-animation="none" data-bg-animation-delay="" data-bg-overlay="false">
+        <div class="inner-wrap row-bg-layer">
+          <div class="row-bg viewport-desktop using-bg-color" style="background-color: #f0f2f6; "></div>
+        </div>
+      </div>
+      <div class="row_col_wrap_12 col span_12 dark left">
+        <div
+          style=""
+          class="vc_col-sm-4 wpb_column column_container vc_column_container col has-animation el_spacing_10px bottom_margin_tablet_20px left_padding_desktop_4vw left_padding_tablet_8vw top_padding_desktop_4vw top_padding_tablet_8vw right_padding_desktop_4vw right_padding_tablet_8vw bottom_padding_desktop_1vw "
+          data-using-bg="true"
+          data-border-radius="20px"
+          data-padding-pos="all"
+          data-has-bg-color="true"
+          data-bg-color="#ffffff"
+          data-bg-opacity="1"
+          data-animation="fade-in-from-left"
+          data-delay="0">
+          <div class="vc_column-inner">
+            <div class="column-bg-overlay-wrap column-bg-layer" data-bg-animation="none">
+              <div class="column-bg-overlay" style="opacity: 1; background-color: #ffffff;"></div>
+            </div>
+            <div class="wpb_wrapper">
+              <div class="nectar-responsive-text font_size_desktop_1-8vw font_size_tablet_22px font_line_height_1-3 nectar-link-underline-effect" style="color: #000000;">
+                <h3>Sizi Dinliyoruz</h3>
+              </div>
+              <div id="fws_6932dee9c29d0" data-midnight="" data-column-margin="default" class="wpb_row vc_row-fluid vc_row inner_row" style="">
+                <div class="row-bg-wrap">
+                  <div class="row-bg"></div>
+                </div>
+                <div class="row_col_wrap_12_inner col span_12  left">
+                  <div class="vc_col-sm-12 wpb_column column_container vc_column_container col child_column right_padding_tablet_33vw right_padding_phone_0px " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
+                    <div class="vc_column-inner">
+                      <div class="wpb_wrapper">
+                        <div class="nectar-responsive-text font_size_min_14px font_size_max_20px font_size_desktop_1-1vw font_line_height_1-5 nectar-link-underline-effect">
+                          <p>Öneri, Teşekkür, Şikayet ve diğer konular için</p>
+                        </div>
+                        <div class="nectar-cta  alignment_tablet_default alignment_phone_default display_tablet_inherit display_phone_inherit " data-color="default" data-using-bg="false" data-display="block" data-style="underline" data-alignment="left" data-text-color="std">
+                          <h6>
+                            <span class="link_wrap">
+                              <a class="link_text" role="button" href="/sizi-dinliyoruz">İletişime Geç</a>
+                            </span>
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="nectar-lottie-wrap nectar-waypoint-el nectar-fade-in width_desktop_120pct width_tablet_70pct width_phone_90pct alignment_center position_desktop_relative left_position_desktop_-50px">
+                <div
+                  class="nectar-lottie"
+                  data-lottie-settings='{"trigger_type":"play","mobile_func":"default","loop":"true","trigger_offset":"0.00,100.00","frame_constraint":"0.00,100.00","speed":"0.8","width_desktop":"120%","width_tablet":"70%","width_phone":"90%","alignment":"center","preserve_aspect_ratio":"xMidYMid meet","position_desktop":"relative","left_position_desktop":"-50","css_animation":"fade-in","json_url":"https:\/\/assets2.lottiefiles.com\/packages\/lf20_f8xnmcvu.json","box_shadow_method":"filter"}'></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          style=" color: #ffffff;"
+          class="vc_col-sm-4 wpb_column column_container vc_column_container col has-animation el_spacing_10px bottom_margin_tablet_20px left_padding_desktop_4vw left_padding_tablet_8vw top_padding_desktop_4vw top_padding_tablet_8vw right_padding_desktop_4vw right_padding_tablet_8vw bottom_padding_desktop_4vw bottom_padding_tablet_8vw "
+          data-cfc="true"
+          data-using-bg="true"
+          data-border-radius="20px"
+          data-overlay-color="true"
+          data-padding-pos="all"
+          data-has-bg-color="true"
+          data-bg-color="#00aeff"
+          data-bg-opacity="1"
+          data-animation="fade-in-from-bottom"
+          data-delay="0">
+          <div class="vc_column-inner">
+            <div class="column-bg-overlay-wrap column-bg-layer" data-bg-animation="none">
+              <div class="column-bg-overlay" style="opacity: 1; background-color: #00aeff;"></div>
+              <div class="column-overlay-layer" style=""></div>
+            </div>
+            <div class="wpb_wrapper">
+              <div class="nectar-responsive-text font_size_desktop_1-8vw font_size_tablet_22px font_line_height_1-3 nectar-link-underline-effect">
+                <h3>Hizmet Talebi</h3>
+              </div>
+              <div id="fws_6932dee9c3ca1" data-midnight="" data-column-margin="default" class="wpb_row vc_row-fluid vc_row inner_row" style="">
+                <div class="row-bg-wrap">
+                  <div class="row-bg"></div>
+                </div>
+                <div class="row_col_wrap_12_inner col span_12  left">
+                  <div class="vc_col-sm-12 wpb_column column_container vc_column_container col child_column right_padding_tablet_33vw right_padding_phone_0px " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
+                    <div class="vc_column-inner">
+                      <div class="wpb_wrapper">
+                        <div class="nectar-responsive-text font_size_min_14px font_size_max_20px font_size_desktop_1-1vw font_line_height_1-5 nectar-link-underline-effect">
+                          <p>Ekol&#8217;ün yüksek kalite standartlarında lojistik hizmetleri için teklif alın.</p>
+                        </div>
+                        <div
+                          class="nectar-cta  text_hover_color_ffffff hover_border_color_ffffff alignment_tablet_default alignment_phone_default display_tablet_inherit display_phone_inherit "
+                          data-color="default"
+                          data-using-bg="false"
+                          data-display="block"
+                          data-style="underline"
+                          data-alignment="left"
+                          data-text-color="custom">
+                          <h6 style="color: #ffffff;">
+                            <span class="link_wrap">
+                              <a class="link_text" style="border-color: #ffffff;" role="button" href="/hizmet-talebi">Teklif Al</a>
+                            </span>
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="img-with-aniamtion-wrap center" data-max-width="110%" data-max-width-mobile="default" data-shadow="none" data-animation="grow-in" style="margin-top: 13%; ">
+                <div class="inner">
+                  <div class="hover-wrap">
+                    <div class="hover-wrap-inner">
+                      <img
+                        fetchpriority="high"
+                        decoding="async"
+                        class="img-with-animation skip-lazy nectar-lazy"
+                        data-delay="0"
+                        height="1563"
+                        width="1790"
+                        data-animation="grow-in"
+                        data-nectar-img-src="https://www.ekol.com/wp-content/uploads/2025/02/services_request_form_vector-e1739543316898.png"
+                        src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%201790%201563'%2F%3E"
+                        alt=""
+                        data-nectar-img-srcset="https://www.ekol.com/wp-content/uploads/2025/02/services_request_form_vector-e1739543316898.png 1790w, https://www.ekol.com/wp-content/uploads/2025/02/services_request_form_vector-e1739543316898-300x262.png 300w, https://www.ekol.com/wp-content/uploads/2025/02/services_request_form_vector-e1739543316898-1024x894.png 1024w, https://www.ekol.com/wp-content/uploads/2025/02/services_request_form_vector-e1739543316898-768x671.png 768w, https://www.ekol.com/wp-content/uploads/2025/02/services_request_form_vector-e1739543316898-1536x1341.png 1536w"
+                        sizes="(max-width: 1790px) 100vw, 1790px" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          style=" color: #000000;"
+          class="vc_col-sm-4 wpb_column column_container vc_column_container col has-animation el_spacing_10px col-overflow-hidden left_padding_desktop_4vw left_padding_tablet_8vw top_padding_desktop_4vw top_padding_tablet_8vw right_padding_desktop_4vw right_padding_tablet_8vw bottom_padding_desktop_4vw bottom_padding_tablet_8vw "
+          data-cfc="true"
+          data-using-bg="true"
+          data-border-radius="20px"
+          data-padding-pos="all"
+          data-has-bg-color="true"
+          data-bg-color="#55565a"
+          data-bg-opacity="1"
+          data-animation="fade-in-from-right"
+          data-delay="0">
+          <div class="vc_column-inner">
+            <div class="column-bg-overlay-wrap column-bg-layer" data-bg-animation="none">
+              <div class="column-bg-overlay" style="opacity: 1; background-color: #55565a;"></div>
+            </div>
+            <div class="wpb_wrapper">
+              <div class="nectar-responsive-text font_size_desktop_1-8vw font_size_tablet_22px font_line_height_1-3 nectar-link-underline-effect" style="color: #ffffff;">
+                <h3>Tesisler</h3>
+              </div>
+              <div id="fws_6932dee9c5913" data-midnight="" data-column-margin="default" class="wpb_row vc_row-fluid vc_row inner_row" style="">
+                <div class="row-bg-wrap">
+                  <div class="row-bg"></div>
+                </div>
+                <div class="row_col_wrap_12_inner col span_12  left">
+                  <div class="vc_col-sm-12 wpb_column column_container vc_column_container col child_column right_padding_tablet_33vw right_padding_phone_0px " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
+                    <div class="vc_column-inner">
+                      <div class="wpb_wrapper">
+                        <div class="nectar-responsive-text font_size_min_14px font_size_max_20px font_size_desktop_1-1vw font_line_height_1-5 nectar-link-underline-effect" style="color: #ffffff;">
+                          <p>Gelişmiş teknolojili tesislerimizi yerinde inceleme fırsatı yakalayın.</p>
+                        </div>
+                        <div
+                          class="nectar-cta  text_hover_color_ffffff hover_border_color_ffffff alignment_tablet_default alignment_phone_default display_tablet_inherit display_phone_inherit "
+                          data-color="default"
+                          data-using-bg="false"
+                          data-display="block"
+                          data-style="underline"
+                          data-alignment="left"
+                          data-text-color="custom">
+                          <h6 style="color: #ffffff;">
+                            <span class="link_wrap">
+                              <a class="link_text" style="border-color: #ffffff;" role="button" href="/tesisler">Tesisleri İncele</a>
+                            </span>
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="divider-wrap height_tablet_60vw " data-alignment="default">
+                <div style="height: 25px;" class="divider"></div>
+              </div>
+              <div id="fws_6932dee9c6520" data-midnight="" data-column-margin="default" class="wpb_row vc_row-fluid vc_row inner_row  min_width_desktop_152pct row_position_absolute bottom_position_desktop_-8pct scale_desktop_1-3 translate_y_-125px translate_x_-125px" style="">
+                <div class="row-bg-wrap">
+                  <div class="row-bg"></div>
+                </div>
+                <div class="row_col_wrap_12_inner col span_12  left">
+                  <div class="vc_col-sm-12 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone tl_br_10px " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
+                    <div class="vc_column-inner">
+                      <div class="wpb_wrapper">
+                        <div class="img-with-aniamtion-wrap  custom-size" data-max-width="100%" data-max-width-mobile="default" data-shadow="none" data-animation="fade-in-from-right">
+                          <div class="inner">
+                            <div class="hover-wrap">
+                              <div class="hover-wrap-inner">
+                                <img
+                                  decoding="async"
+                                  class="img-with-animation skip-lazy nectar-lazy"
+                                  data-delay="0"
+                                  height="466"
+                                  width="1024"
+                                  data-animation="fade-in-from-right"
+                                  data-nectar-img-src="https://www.ekol.com/wp-content/uploads/2025/02/lotus_gorsel_new_iletisim-1024x466.png"
+                                  src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%201024%20466'%2F%3E"
+                                  alt=""
+                                  data-nectar-img-srcset="https://www.ekol.com/wp-content/uploads/2025/02/lotus_gorsel_new_iletisim-1024x466.png 1024w, https://www.ekol.com/wp-content/uploads/2025/02/lotus_gorsel_new_iletisim-300x137.png 300w, https://www.ekol.com/wp-content/uploads/2025/02/lotus_gorsel_new_iletisim-768x350.png 768w, https://www.ekol.com/wp-content/uploads/2025/02/lotus_gorsel_new_iletisim.png 1270w"
+                                  sizes="(max-width: 1024px) 100vw, 1024px" />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </div>
+</div>
+<script type="text/javascript" src="/assets/js/map(1).js" id="nectarMap-js"></script>
+<script type="text/javascript" src="/assets/js/lottie-player.min.js" id="lottie-player-js"></script>
+<script type="text/javascript" src="/assets/js/nectar-lottie.js" id="nectar-lottie-js"></script>

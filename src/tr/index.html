@@ -1,0 +1,83 @@
+---
+pageConfig:
+  type: 1
+  header:
+    transparent: true
+lang: tr
+heroSection: 
+  title: Bir adım 
+  heroBgVideoSource: /assets/media/home/video-banner.mp4
+  animatedText: öteye taşıyoruz
+  dynamicWords:
+    - seni
+    - sektörü
+    - geleceği
+    - yükünü
+
+sectorHighlightsSection:
+  title: RAKAMLARLA ADECA
+  text:
+    title: Adeca Logistics 
+    subTitle: 20+ Yıllık Transit Taşıma Tecrübesi
+    summary: Avrupa’dan Kafkasya, Orta Asya ve Türki Cumhuriyetler’e kadar uzanan aktarmasız direkt taşımacılıkta öncüyüz. 600’ü aşkın özmal 45’lik konteyner ve swap body ekipmanımız, güçlü araç filomuz ve teknoloji odaklı operasyon anlayışımızla tedarik zincirlerinize hız, güven ve sürdürülebilirlik katıyoruz.
+  data:
+    - amount: 600
+      symbol: +
+      unit: Özmal 45’lik konteyner & swap body
+    - amount: 42
+      symbol: +
+      unit: Avrupa ve Asya’da stratejik nokta
+servicesSection:
+  title: Adeca Lojistik Güvencesiyle
+  subTitle: Hizmetlerimiz
+
+scrollingTextSection:
+  texts:
+    - bir adım öteye taşıyoruz seni
+    - bir adım öteye taşıyoruz sektörü
+    - bir adım öteye taşıyoruz geleceği
+    - bir adım öteye taşıyoruz yükünü
+
+introTextSection:
+  
+  slogan: 
+    first: Biz sadece yük taşımıyor; her sevkiyatta daha az emisyon, daha çok sorumlulukla
+    emphatized: geleceği bir adım öteye
+    last: taşıyoruz.
+
+videoBannerSection:
+  source: /assets/media/ekol_alvarium_short_video.mov
+
+layout: layouts/main-layout.html
+title: Anasayfa
+tags: home
+eleventyNavigation:
+  key: tr-index
+  title: Anasayfa
+  order: 1
+---
+<div class="container main-content" role="main" style="--nectar-sticky-top-distance: 165px;">
+  <div class="row">
+
+
+
+
+    {% include "sections/home/hero.html" heroTitle: heroSection.title beginningText: heroSection.animatedText dynamicWords: heroSection.dynamicWords heroBgVideoSource: heroSection.heroBgVideoSource %}
+
+    <!-- {% include "sections/home/ataturk-banner.html" %} -->
+
+    {% include "sections/home/sector-highlights.html" datas: sectorHighlightsSection.data %}
+
+    {% include "sections/home/services.html" title: servicesSection.title subTitle: servicesSection.subTitle %}
+
+    {% include "sections/home/scrolling-text.html" scrollingTexts: scrollingTextSection.texts %}
+
+    {% include "sections/home/intro-text.html" first: introTextSection.slogan.first emphatized: introTextSection.slogan.emphatized last: introTextSection.slogan.last %} 
+
+    {% include "sections/home/video-banner.html" videoSource: videoBannerSection.source %}
+
+    <!-- {% include "sections/home/facilities.html" %}
+
+    {% include "sections/home/bulletins.html" %} -->
+  </div>
+</div>

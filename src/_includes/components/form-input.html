@@ -1,0 +1,26 @@
+ <div id="form-element-{{element.id}}" class="wpforms-field wpforms-field-name kapatilacak" data-field-id="data-field-{{element.id}}">
+    <label class="wpforms-field-label wpforms-label-hide" for="{{ element.name }}" aria-hidden="false">
+    {{ element.label }}
+    {% if element.required %}
+        <span class="wpforms-required-label" aria-hidden="true">*</span>
+    {% endif %}
+    </label>
+
+    {% case element.type %}
+        {% when 'text' %}
+            <input type="text" id="form-element-{{ element.id }}" class="wpforms-field-large wpforms-field-required" name="{{element.name}}" placeholder="{{ element.placeholder }} {% if element.required %}*{% endif %}" required="{{ element.required }}" />
+         {% when 'email' %}
+            <input type="email" id="form-element-{{ element.id }}" class="wpforms-field-large wpforms-field-required" name="{{element.name}}" placeholder="{{ element.placeholder }} {% if element.required %}*{% endif %}" required="{{ element.required }}" />
+        {% when 'select' %}
+            <select id="{{ element.id }}" class="wpforms-field-large wpforms-field-required" name="{{element.name}}" required="{{element.required}}">
+                <option value={{element.option}} class="placeholder" disabled selected="selected">{{element.placeholder}}</option>
+                {% for option in element.options %}
+                    <option value="{{option.value}}">{{option.label}}</option>
+                {% endfor %}
+            </select>
+        {% when 'tel' %}
+            <input type="tel" id="wpforms-69620-field_6" class="wpforms-field-large wpforms-field-required wpforms-smart-phone-field" data-rule-smart-phone-field="true" name="{{element.name}}" placeholder="{{ element.placeholder }} {% if element.required %}*{% endif %}" aria-label="{{element.label}}" aria-errormessage="wpforms-69620-field_6-error" required="{{element.required}}" />
+        {% when 'textarea' %}
+            <textarea id="{{element.id}}" class="wpforms-field-medium wpforms-field-required" name="{{element.name}}" placeholder="{{ element.placeholder }} {% if element.required %}*{% endif %}"  aria-errormessage="{{element.name}}-error" required="{{element.required}}"></textarea>
+    {% endcase %}
+</div>

@@ -1,0 +1,98 @@
+---
+lang: tr
+layout: layouts/form-layout.html
+title: İletişim | Hizmet Talebi
+pageTitle: Hizmet Talebi
+pageSubTitle: Hizmet talebi oluşturmak için aşağıdaki formu eksiksiz bir şekilde doldurun.
+noScriptNotification: Bu formu bitirebilmek için tarayıcınızda JavaScript'i etkinleştirin.
+formElements:
+  - id: 1
+    type: text
+    label: Ad Soyad
+    name: name-lastname
+    placeholder: Ad Soyad
+    required: true
+  - id: 2
+    type: text
+    label: Firma
+    name: corporation
+    placeholder: Firma
+    required: true
+  - id: 3
+    type: text
+    label: E-Mail
+    name: email
+    placeholder: E-Mail
+    required: true
+  - id: 4
+    type: tel
+    label: Telefon
+    name: phoneNumber
+    placeholder: Telefon
+    required: true
+  - id: 5
+    type: textarea
+    label: ""
+    name: message
+    placeholder: Mesajınız
+    required: true
+submitButtonText: Teklif Al
+tags: formPage
+    
+---
+<div class="container main-content" role="main">
+  <div class="row">
+    <div id="fws_693827a196301" data-column-margin="default" data-midnight="dark" class="wpb_row vc_row-fluid vc_row top-level full-width-content vc_row-o-equal-height vc_row-flex vc_row-o-content-middle" style="padding-top: 0px; padding-bottom: 0px; ">
+      <div class="row-bg-wrap" data-bg-animation="fade-in" data-bg-animation-delay="" data-bg-overlay="false">
+        <div class="inner-wrap row-bg-layer">
+          <div class="row-bg viewport-desktop" style=""></div>
+        </div>
+      </div>
+      <div class="row_col_wrap_12 col span_12 dark left" style="justify-content: center;">
+        <div
+          style=" color: #000000;"
+          class="vc_col-sm-12 vc_col-md-6 wpb_column column_container vc_column_container col has-animation padding-6-percent top_margin_phone_100px inherit_tablet inherit_phone "
+          data-cfc="true"
+          data-using-bg="true"
+          data-padding-pos="all"
+          data-has-bg-color="true"
+          data-bg-color="#ffffff"
+          data-bg-opacity="1"
+          data-animation="fade-in-from-right"
+          data-delay="0">
+          <div class="vc_column-inner">
+            <div class="column-bg-overlay-wrap column-bg-layer" data-bg-animation="none">
+              <div class="column-bg-overlay" style="opacity: 1; background-color: #ffffff;"></div>
+            </div>
+            <div class="wpb_wrapper">
+              <div class="nectar-split-heading " data-align="default" data-m-align="inherit" data-text-effect="letter-reveal-bottom" data-animation-type="line-reveal-by-space" data-animation-delay="0" data-animation-offset="" data-m-rm-animation="" data-stagger="" data-custom-font-size="false">
+                <h1 style=" color: #55565a;">{{ pageTitle }}</h1>
+              </div>
+              <noscript>{{ noScriptNotification }}</noscript>
+              <div class="wpb_text_column wpb_content_element ">
+                <div class="wpb_wrapper">
+                  <p>{{ pageSubTitle }}</p>
+                </div>
+              </div>
+              <div class="divider-wrap" data-alignment="default">
+                <div style="height: 10px;" class="divider"></div>
+              </div>
+              <div class="wpforms-container wpforms-container-full wpforms-render-modern" id="wpforms-69620">
+                <form id="wpforms-form-69620" class="wpforms-validate wpforms-form wpforms-ajax-form" data-formid="69620" method="post" enctype="multipart/form-data" action="/hizmet-talebi/" data-token="010df35348ff56b37fcab45b119cf15b" data-token-time="1765287841">
+                  <noscript class="wpforms-error-noscript">Bu formu bitirebilmek için tarayıcınızda JavaScript&#039;i etkinleştirin.</noscript>
+                  <div class="wpforms-hidden" id="wpforms-error-noscript">Bu formu bitirebilmek için tarayıcınızda JavaScript&#039;i etkinleştirin.</div>
+                  <div class="wpforms-field-container">
+                    {% for element in formElements %}
+                        {% include "components/form-input.html" element: element %}
+                    {% endfor %}
+                  </div>
+                  <button type="submit" name="wpforms[submit]" id="wpforms-submit-69620" class="wpforms-submit" data-alt-text="Gönderiliyor..." data-submit-text="{{submitButtonText}}" aria-live="assertive" value="wpforms-submit">{{submitButtonText}}</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

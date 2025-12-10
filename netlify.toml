@@ -1,0 +1,13 @@
+[[redirects]]
+  from = "/"
+  to = "/tr/"
+  status = 301
+  force = true
+  conditions = {Country = ["TR"]}
+
+[[redirects]]
+  from = "/"
+  to = "/en/"
+  status = 301
+  force = true
+  conditions = {Country = ["*"]}  # diğer ülkeler

@@ -1,0 +1,30 @@
+:root {
+  --nectar-accent-color: #303b5a !important;
+  --nectar-extra-color-1: #303b5a !important;
+  --nectar-extra-color-2: #303b5a !important;
+  --nectar-extra-color-3: #303b5a !important;
+}
+
+@media only screen and (min-width: 1000px) {
+  .hover-wrap-inner {
+    display: flex;
+    justify-content: center;
+  }
+  .career-page-image {
+    width: 30vw;
+  }
+}
+
+.nectar-bg-size {
+  background-size: 300px 300px !important;
+  background-repeat: no-repeat;
+}
+
+.nectar-fancy-box .box-bg.nectar-bg-size::after {
+  /* background-color: rgba(8, 71, 139, 0.8) !important; */
+  backdrop-filter: blur(12px);
+}
+
+.nectar-cta[data-color="accent-color"]:not([data-style="material"]) .link_wrap.custom_link_wrap {
+  background-color: rgba(28, 91, 159, 1);
+}

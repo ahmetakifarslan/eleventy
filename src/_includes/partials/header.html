@@ -1,0 +1,104 @@
+{%- assign permanentTransparent = include.permanentTransparent | default: "false" -%}
+{%- assign transparencyOption    = include.transparencyOption    | default: "" -%}
+{%- assign transparentHeader     = include.transparentHeader     | default: "false" -%}
+{%- assign transparentShadowHelper = include.transparentShadowHelper | default: "false" -%}
+{%- assign removeBorder          = include.removeBorder          | default: "false" -%}
+{%- assign addTransparentClass   = include.addTransparentClass   | default: false -%}
+{%- assign headerClasses = "" -%}
+
+{%- assign headerClasses = "" -%}
+{%- if addTransparentClass or permanentTransparent == "1" or permanentTransparent == true -%}
+  {%- assign headerClasses = "transparent" -%}
+{%- endif -%}
+
+<div id="header-outer"
+     data-has-menu="true"
+     data-has-buttons="yes"
+     data-header-button_style="hover_scale"
+     data-using-pr-menu="false"
+     data-mobile-fixed="1"
+     data-ptnm="1"
+     data-lhe="animated_underline"
+     data-user-set-bg="#ffffff"
+     data-format="default"
+     
+     data-permanent-transparent="{{ permanentTransparent }}"
+     data-megamenu-rt="0"
+     data-remove-fixed="0"     
+     data-header-resize="{% if permanentTransparent == "1" or permanentTransparent == true %}1{% else %}0{% endif %}"
+     
+     data-cart="false"
+     data-transparency-option="{{ transparencyOption }}"
+     data-box-shadow="none"
+     data-shrink-num="6"
+     data-using-secondary="0"
+     data-using-logo="1"
+     data-logo-height="75"
+     data-m-logo-height="75"
+     data-padding="20"
+     data-full-width="true"
+     data-condense="false"
+     
+     {%- if permanentTransparent == "1" or permanentTransparent == true -%}
+       data-transparent-header="{{ transparentHeader }}"
+       data-transparent-shadow-helper="{{ transparentShadowHelper }}"
+       data-remove-border="{{ removeBorder }}"
+     {%- endif -%}
+     
+     class="{{ headerClasses }}">
+
+  <header id="top" role="banner" aria-label="Main Menu" class="{{headerClasses}}">
+    <div class="container">
+      <div class="row">
+        <div class="col span_3">
+          {% include "components/header-logo.html" %}
+        </div>
+        <!--/span_3-->
+        <div class="col span_9 col_last">
+          <div class="nectar-mobile-only mobile-header">
+            <div class="inner"></div>
+          </div>
+          <div class="slide-out-widget-area-toggle mobile-icon slide-out-from-right" data-custom-color="true" data-icon-animation="simple-transform">
+            <div>
+              <a href="#slide-out-widget-area" role="button" aria-label="Navigation Menu" aria-expanded="false" class="closed">
+                <span class="screen-reader-text">Menu</span>
+                <span aria-hidden="true">
+                  <i class="lines-button x2">
+                    <i class="lines"></i>
+                  </i>
+                </span>
+              </a>
+            </div>
+          </div>
+          <nav aria-label="Main Menu">
+            <ul class="sf-menu">
+              <li id="menu-item-336" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-btn-style-button-border_accent-color menu-item-hover-text-reveal-wave menu-item-has-icon nectar-regular-menu-item menu-item-336">
+                {% include "components/get-contact-button.html" href: contactRequestPageHref %}
+              </li>
+            </ul>
+            <ul class="buttons sf-menu" data-user-set-ocm="1">
+              <li class="slide-out-widget-area-toggle" data-icon-animation="simple-transform" data-custom-color="true">
+                <div>
+                  <a href="#slide-out-widget-area" aria-label="Navigation Menu" aria-expanded="false" role="button" class="closed">
+                    <span class="screen-reader-text">Menu</span>
+                    <span aria-hidden="true">
+                      <i class="lines-button x2">
+                        <i class="lines"></i>
+                      </i>
+                    </span>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!--/span_9-->
+      </div>
+      <!--/row-->
+    </div>
+    <!--/container-->
+  </header>
+  {%- if permanentTransparent == "1" or permanentTransparent == true -%}
+    <div class="header-space"></div>
+  {%- endif -%}
+</div>

@@ -1,0 +1,17 @@
+---
+pageConfig: 
+    type: 3
+layout: layouts/main-layout.html
+---
+
+<div class="container main-content" role="main" style="--nectar-sticky-top-distance: 165px;">
+  <div class="row">
+    {% include "sections/services/sticky-bar.html" %} {% include "sections/services/header.html" %}
+    <div id="serviceContent" style="padding:32px 0;">
+      {% if paragraphs.size > 0 %} {% for paragraph in paragraphs %}
+      <p>{{ paragraph }}</p>
+      {% endfor %} {% endif %} {{content}}
+    </div>
+    {% include "sections/services/get-contact.html" %}
+  </div>
+</div>

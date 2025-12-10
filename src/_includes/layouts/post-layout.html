@@ -1,0 +1,30 @@
+<!doctype html>
+<html class="no-js">
+  {% include "partials/head/post-head.html" %}
+  <body class="wp-singular post-template-default single single-post postid-75446 single-format-standard wp-theme-salient wp-child-theme-salient-child material wpb-js-composer js-comp-ver-8.4.2 vc_responsive" data-footer-reveal="false" data-footer-reveal-shadow="none" data-header-format="default" data-body-border="off" data-boxed-style="" data-header-breakpoint="1000" data-dropdown-style="minimal" data-cae="easeOutQuart" data-cad="1500" data-megamenu-width="contained" data-aie="none" data-ls="fancybox" data-apte="standard" data-hhun="1" data-fancy-form-rcs="1" data-form-style="default" data-form-submit="see-through" data-is="minimal" data-button-style="rounded_shadow" data-user-account-button="false" data-flex-cols="true" data-col-gap="50px" data-header-inherit-rc="false" data-header-search="true" data-animated-anchors="true" data-ajax-transitions="false" data-full-width-header="true" data-slide-out-widget-area="true" data-slide-out-widget-area-style="slide-out-from-right" data-user-set-ocm="1" data-loading-animation="none" data-bg-header="false" data-responsive="1" data-ext-responsive="true" data-ext-padding="70" data-header-resize="0" data-header-color="custom" data-cart="false" data-remove-m-parallax="" data-remove-m-video-bgs="" data-m-animate="1" data-force-header-trans-color="light" data-smooth-scrolling="0" data-permanent-transparent="false">
+    <div class="ocm-effect-wrap">
+      <div class="ocm-effect-wrap-inner">
+        {% include "partials/header.html" %}
+        <div id="ajax-content-wrap">
+          <div class="container-wrap no-sidebar" data-midnight="dark" data-remove-post-date="0" data-remove-post-author="1" data-remove-post-comment-number="1">
+            {{content}}
+
+            <!--/container main-content-->
+            {% include "partials/footer.html" %}
+          </div>
+          <!--/container-wrap-->
+        
+          {% include "partials/slideout-menu.html" %}
+        </div>
+        </div>
+        <!--/ajax-content-wrap-->
+        <a id="to-top" aria-label="Back to top" role="button" href="#" class="mobile-disabled">
+          <i role="presentation" class="fa fa-angle-up"></i>
+        </a>
+      </div>
+    </div>
+    <!--/ocm-effect-wrap-->
+
+    {% include "partials/script/base-scripts.html" %}
+  </body>
+</html>

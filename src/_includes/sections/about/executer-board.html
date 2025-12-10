@@ -1,0 +1,123 @@
+<div
+    id="yonetim-takimi"
+    data-column-margin="default"
+    data-midnight="dark"
+    data-top-percent="5%"
+    data-bottom-percent="5%"
+    class="wpb_row vc_row-fluid vc_row full-width-content vc_row-o-equal-height vc_row-flex vc_row-o-content-top  right_padding_6pct left_padding_6pct top_padding_tablet_10pct bottom_padding_tablet_10pct"
+    style="padding-top: calc(100vw * 0.05); padding-bottom: calc(100vw * 0.05); ">
+    <div class="row-bg-wrap" data-bg-animation="none" data-bg-animation-delay="" data-bg-overlay="false">
+    <div class="inner-wrap row-bg-layer"><div class="row-bg viewport-desktop" style=""></div></div>
+    </div>
+    <div class="row_col_wrap_12 col span_12 dark left">
+    <div
+        class="vc_col-sm-4 wpb_column column_container vc_column_container col nectar-sticky-column-css has-animation no-extra-padding inherit_tablet inherit_phone n-sticky-initialized triggered-animation animated-in"
+        data-padding-pos="all"
+        data-has-bg-color="false"
+        data-bg-color=""
+        data-bg-opacity="1"
+        data-animation="fade-in-from-bottom"
+        data-delay="0"
+        style="transform: none; opacity: 1;">
+        <div class="n-sticky">
+        <div class="vc_column-inner">
+            <div class="wpb_wrapper">
+            <div
+                class="nectar-split-heading font_size_3vw animated-in"
+                data-align="default"
+                data-m-align="inherit"
+                data-text-effect="none"
+                data-animation-type="line-reveal-by-space"
+                data-animation-delay="0"
+                data-animation-offset=""
+                data-m-rm-animation=""
+                data-stagger=""
+                data-custom-font-size="true"
+                style="font-size: 3vw; line-height: 3.3vw;">
+                <h2 style=" color: #55565a;">{{ "about.corporate.executiveBoard.h2" | t: locale }}</h2>
+            </div>
+            <div
+                class="nectar-split-heading font_size_0-9vw font_size_tablet_18px font_size_phone_16px font_line_height_1-7 animated-in"
+                data-align="default"
+                data-m-align="inherit"
+                data-text-effect="none"
+                data-animation-type="line-reveal-by-space"
+                data-animation-delay="0"
+                data-animation-offset=""
+                data-m-rm-animation=""
+                data-stagger=""
+                data-custom-font-size="true"
+                style="font-size: 0.9vw; line-height: 0.99vw;">
+                <p>{{ "about.corporate.executiveBoard.p" | t: locale }}</p>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="vc_col-sm-8 wpb_column column_container vc_column_container col padding-6-percent el_spacing_0px no-extra-padding_tablet no-extra-padding_phone " data-padding-pos="left" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
+        <div class="vc_column-inner">
+        <div class="wpb_wrapper">
+            <div id="fws_69283d6c37acc" data-midnight="" data-column-margin="30px" class="wpb_row vc_row-fluid vc_row inner_row  vc_custom_1634415872169" style="">
+            <div class="row-bg-wrap"><div class="row-bg"></div></div>
+            <div class="row_col_wrap_12_inner col span_12  left">
+                <div
+                class="vc_col-sm-2 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone "
+                data-t-w-inherits="small_desktop"
+                data-padding-pos="all"
+                data-has-bg-color="false"
+                data-bg-color=""
+                data-bg-opacity="1"
+                data-animation=""
+                data-delay="0">
+                <div class="vc_column-inner">
+                    <div class="wpb_wrapper"></div>
+                </div>
+                </div>
+
+                <div
+                class="vc_col-sm-4 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone "
+                data-t-w-inherits="small_desktop"
+                data-padding-pos="all"
+                data-has-bg-color="false"
+                data-bg-color=""
+                data-bg-opacity="1"
+                data-animation=""
+                data-delay="0">
+                <div class="vc_column-inner">
+                    <div class="wpb_wrapper">
+                    {% assign team = "about.corporate.executiveBoard.team" | t: locale %}
+                    {% for member in team %}
+                    <div class="team-member" role="button" tabindex="0" data-style="bio_fullscreen_alt">
+                        <div class="team-member-image">
+                        <div class="team-member-image-inner img-loaded"><img fetchpriority="high" decoding="async" class="nectar-lazy loaded" src="{{ member.profileImgUrl }}" width="500" height="500" alt="" style="" /></div>
+                        </div>
+                        <div class="team-member-overlay"></div>
+                        <div class="team-meta">
+                        <h5>{{ member.jobTitle }}</h5>
+                        <h3>{{ member.name }}</h3>
+                        <p></p>
+                        </div>
+                        <div class="nectar_team_bio_img" data-img-src="{{ member.profileImgUrl }}"></div>
+                        <div class="nectar_team_bio">
+                        <p>{{ member.bio }}</p>
+                        <div class="bottom_meta"></div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                    </div>
+                </div>
+                </div>
+
+                <div class="vc_col-sm-2 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
+                <div class="vc_column-inner">
+                    <div class="wpb_wrapper"></div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+</div>

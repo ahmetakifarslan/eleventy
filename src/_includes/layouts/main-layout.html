@@ -1,0 +1,136 @@
+<!doctype html>
+<html{% if pageConfig.type == 1 %} lang="{{ lang | default: 'tr-TR' }}"{% elsif pageConfig.type == 2 or pageConfig.type == 3 %} lang="tr-TR"{% endif %} class="no-js">
+  
+  {% if pageConfig.type == 1 %}
+    {% include "partials/head/base-head.html" %}
+  {% elsif pageConfig.type == 2 %}
+    {% include "partials/head/form-head.html" %}
+  {% elsif pageConfig.type == 3 %}
+    {% include "partials/head/service-head.html" %}
+  {% elsif pageConfig.type == 4 %}
+    {% include "partials/head/post-head.html" %}
+  {% elsif pageConfig.type == 5 %}
+    {% include "partials/head/contact-head.html" %}
+  {% endif %}
+
+  <body
+    class="
+        wp-singular 
+        {% if pageConfig.type == 4 %}
+            post-template-default single single-post postid-{{ pageConfig.id }} single-format-standard
+        {% else %}
+            page-template-default page page-id-{{ pageConfig.id }}
+        {% endif %}
+        wp-theme-salient wp-child-theme-salient-child material wpb-js-composer js-comp-ver-8.4.2 vc_responsive
+    "
+    data-footer-reveal="false"
+    data-footer-reveal-shadow="none"
+    data-header-format="default"
+    data-body-border="off"
+    data-boxed-style=""
+    data-header-breakpoint="1000"
+    data-dropdown-style="minimal"
+    data-cae="easeOutQuart"
+    data-cad="1500"
+    data-megamenu-width="contained"
+    data-aie="none"
+    data-ls="fancybox"
+    data-apte="standard"
+    data-hhun="1"
+    data-fancy-form-rcs="1"
+    data-form-style="default"
+    data-form-submit="see-through"
+    data-is="minimal"
+    data-button-style="rounded_shadow"
+    data-user-account-button="false"
+    data-flex-cols="true"
+    data-col-gap="50px"
+    data-header-inherit-rc="false"
+    data-header-search="true"
+    data-animated-anchors="true"
+    data-ajax-transitions="false"
+    data-full-width-header="true"
+    data-slide-out-widget-area="true"
+    data-slide-out-widget-area-style="slide-out-from-right"
+    data-user-set-ocm="1"
+    data-loading-animation="none"
+    data-bg-header="{% if pageConfig.type == 1 or pageConfig.type == 2 %}true{% else %}false{% endif %}"
+    data-responsive="1"
+    data-ext-responsive="true"
+    data-ext-padding="70"
+    data-header-resize="{% if pageConfig.type == 1 %}1{% else %}0{% endif %}"
+    data-header-color="custom"
+    data-cart="false"
+    data-remove-m-parallax=""
+    data-remove-m-video-bgs=""
+    data-m-animate="1"
+    data-force-header-trans-color="light"
+    data-smooth-scrolling="0"
+    data-permanent-transparent="{% if pageConfig.type == 1 or pageConfig.type == 2 %}1{% else %}false{% endif %}"
+    >
+    <script type="text/javascript">
+      (function(window, document) {
+        document.documentElement.classList.remove("no-js");
+        if (navigator.userAgent.match(/(Android|iPod|iPhone|iPad|BlackBerry|IEMobile|Opera Mini)/)) {
+          document.body.className += " using-mobile-browser mobile ";
+        }
+        if (navigator.userAgent.match(/Mac/) && navigator.maxTouchPoints && navigator.maxTouchPoints > 2) {
+          document.body.className += " using-ios-device ";
+        }
+        if (!("ontouchstart" in window)) {
+          var body = document.querySelector("body");
+          var winW = window.innerWidth;
+          var bodyW = body.clientWidth;
+          if (winW > bodyW + 4) {
+            body.setAttribute("style", "--scroll-bar-w: " + (winW - bodyW - 4) + "px");
+          } else {
+            body.setAttribute("style", "--scroll-bar-w: 0px");
+          }
+        }
+      })(window, document);
+    </script>
+    <div class="ocm-effect-wrap">
+        <div class="ocm-effect-wrap-inner">
+            
+            {% if pageConfig.type == 3 %}
+                <div id="header-space" data-header-mobile-fixed="1"></div>
+            {% endif %}
+
+            {% if pageConfig.header.transparent == 'true' %}
+                {% include "partials/header.html" permanentTransparent: true addTransparentClass: true transparencyOption: "1" transparentHeader: "true" removeBorder: "true" %}
+            {% else %}
+                {% include "partials/header.html" %}
+            {% endif %}
+
+
+            <div id="ajax-content-wrap">
+                <div 
+                    class="container-wrap{% if pageConfig.type == 4 %} no-sidebar{% endif %}"
+                    {% if pageConfig.type == 1 %}style="padding-top: 0px; min-height: 1294px;"{% endif %}
+                    {% if pageConfig.type == 4 %}data-midnight="dark" data-remove-post-date="0" data-remove-post-author="1" data-remove-post-comment-number="1"{% endif %}
+                >
+                    {{ content }} 
+                    {% include "partials/footer.html" %}
+                </div>
+                {% include "partials/slideout-menu.html" %}
+            </div>
+
+        <a id="to-top" aria-label="Back to top" role="button" href="#" class="mobile-disabled">
+            <i role="presentation" class="fa fa-angle-up"></i>
+        </a>
+
+
+        </div>
+    </div>
+    
+    {% if pageConfig.type == 3 %}
+        {% include "partials/script/service-script.html" %}
+    {% elsif pageConfig.type == 2 %}
+        {% include "partials/script/base-scripts.html" %}
+        {% include "partials/script/form-scripts.html" %}
+    {% else %}
+        {% include "partials/script/base-scripts.html" %}
+    {% endif %}
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+    <div id="getContact" data-column-margin="default" data-midnight="light" class="wpb_row vc_row-fluid vc_row full-width-section vc_row-o-equal-height vc_row-flex vc_row-o-content-middle" style="padding-top: 80px; padding-bottom: 80px; ">
+      <div class="row-bg-wrap" data-bg-animation="zoom-out-slow" data-bg-animation-delay="" data-bg-overlay="true">
+        <div class="inner-wrap row-bg-layer using-image animated-in">
+          <div
+            class="row-bg viewport-desktop using-image using-bg-color loaded"
+            style='background-position: center center; background-repeat: no-repeat; background-color: rgb(255, 255, 255); background-image: url("{{ getContactSectionBgSrc }}");'></div>
+        </div>
+        <div class="row-bg-overlay row-bg-layer" style="background-color:#282828;  opacity: 0.8; "></div>
+      </div>
+      <div class="nectar-shape-divider-wrap no-color " style=" height:50px;" data-height="50" data-front="" data-style="tilt" data-position="top">
+        <svg class="nectar-shape-divider" aria-hidden="true" fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none"><polygon points="104 10 0 0 0 10"></polygon></svg>
+      </div>
+      <div class="row_col_wrap_12 col span_12 light left">
+        <div
+          class="vc_col-sm-5 wpb_column column_container vc_column_container col no-extra-padding force-tablet-text-align-center force-phone-text-align-center inherit_tablet inherit_phone "
+          data-padding-pos="all"
+          data-has-bg-color="false"
+          data-bg-color=""
+          data-bg-opacity="1"
+          data-animation=""
+          data-delay="0">
+          <div class="vc_column-inner">
+            <div class="wpb_wrapper">
+              <div class="nectar-highlighted-text" data-style="half_text" data-exp="default" data-using-custom-color="true" data-animation-delay="false" data-color="#ff1053" data-color-gradient="" style="">
+                <h2>
+                  {{ getContactSectionHeader }}
+                </h2>
+              </div>
+              <div class="wpb_text_column wpb_content_element  vc_custom_1741074160432">
+                <div class="wpb_wrapper">
+                  <div class="wpb_text_column wpb_content_element ">
+                    <div class="wpb_wrapper">
+                      <p>{{ getContactSectionSubHeader }}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="vc_col-sm-1 wpb_column column_container vc_column_container col no-extra-padding force-tablet-text-align-center force-phone-text-align-center inherit_tablet inherit_phone "
+          data-padding-pos="all"
+          data-has-bg-color="false"
+          data-bg-color=""
+          data-bg-opacity="1"
+          data-animation=""
+          data-delay="0">
+          <div class="vc_column-inner">
+            <div class="wpb_wrapper"></div>
+          </div>
+        </div>
+
+        <div
+          class="vc_col-sm-6 wpb_column column_container vc_column_container col no-extra-padding force-tablet-text-align-center force-phone-text-align-center inherit_tablet inherit_phone "
+          data-padding-pos="all"
+          data-has-bg-color="false"
+          data-bg-color=""
+          data-bg-opacity="1"
+          data-animation=""
+          data-delay="0">
+          <div class="vc_column-inner">
+            <div class="wpb_wrapper">
+              <div id="fws_69283dae6f700" data-midnight="" data-column-margin="default" class="wpb_row vc_row-fluid vc_row inner_row" style="">
+                <div class="row-bg-wrap"><div class="row-bg"></div></div>
+                <div class="row_col_wrap_12_inner col span_12  right">
+                  <div class="vc_col-sm-12 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
+                    <div class="vc_column-inner">
+
+                      <div class="wpb_wrapper">
+                        {% assign formPage = collections.formPage | first %}  
+                        <a
+                          class="nectar-button jumbo see-through-2 has-icon wpb_animate_when_almost_visible wpb_lightSpeedIn lightSpeedIn animated"
+                          role="button"
+                          style="margin-top: 50px; border-color: rgba(255, 255, 255, 0.75); color: rgb(255, 255, 255); visibility: visible;"
+                          href="{{ formPage.url }}"
+                          data-color-override="#ffffff"
+                          data-hover-color-override="#ffffff"
+                          data-hover-text-color-override="#000000">
+                          <span>Teklif Alın</span>
+                          <i class="icon-button-arrow" style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); box-shadow: rgba(255, 255, 255, 0.24) 0px 8px 15px;"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>

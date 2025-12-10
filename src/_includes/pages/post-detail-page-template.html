@@ -1,0 +1,130 @@
+---
+pageConfig:
+    type: 4
+layout: layouts/main-layout.html
+---
+
+<div class="container main-content" role="main">
+  <div class="row featured-media-under-header" data-animate="fade_in">
+    <div class="featured-media-under-header__content">
+      <!-- <div class="featured-media-under-header__cat-wrap">
+                    <span class="meta-category nectar-inherit-label">
+                      <span class="nectar-inherit-border-radius nectar-bg-hover-accent-color basin-bultenleri">Basın Bültenleri</span>
+                    </span>
+                  </div> -->
+      <h1 class="entry-title">{{ title }}</h1>
+      <div class="featured-media-under-header__meta-wrap nectar-link-underline-effect">
+        <span class="meta-date date published">{{ post.date | date: "%d.%m.%Y"}}</span>
+        <span class="meta-date date updated rich-snippet-hidden">{{ post.date | date: "%d.%m.%Y"}}</span>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="post-area col  span_12 col_last" role="main">
+      <article id="post-75446" class="post-75446 post type-post status-publish format-standard has-post-thumbnail category-basin-bultenleri">
+        <div class="inner-wrap">
+          <div class="post-content" data-hide-featured-media="1">
+            <div class="content-inner">
+              <div id="fws_6932b05aa2f52" data-column-margin="default" data-midnight="dark" class="wpb_row vc_row-fluid vc_row" style="padding-top: 0px; padding-bottom: 0px; ">
+                <div class="row-bg-wrap" data-bg-animation="none" data-bg-animation-delay="" data-bg-overlay="false">
+                  <div class="inner-wrap row-bg-layer">
+                    <div class="row-bg viewport-desktop" style=""></div>
+                  </div>
+                </div>
+                <div class="row_col_wrap_12 col span_12 dark left">
+                  <div class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding inherit_tablet inherit_phone " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
+                    <div class="vc_column-inner">
+                      <div class="wpb_wrapper">
+                        <div class="img-with-aniamtion-wrap " data-max-width="100%" data-max-width-mobile="default" data-shadow="none" data-animation="none">
+                          <div class="inner">
+                            <div class="hover-wrap">
+                              <div class="hover-wrap-inner">
+                                <img
+                                  fetchpriority="high"
+                                  decoding="async"
+                                  class="img-with-animation skip-lazy nectar-lazy"
+                                  data-delay="0"
+                                  height="1080"
+                                  width="1080"
+                                  data-animation="none"
+                                  data-nectar-img-src="https://www.ekol.com/wp-content/uploads/2025/07/ipra_odul_foto.webp"
+                                  src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%201080%201080'%2F%3E"
+                                  alt=""
+                                  data-nectar-img-srcset="https://www.ekol.com/wp-content/uploads/2025/07/ipra_odul_foto.webp 1080w, https://www.ekol.com/wp-content/uploads/2025/07/ipra_odul_foto-300x300.webp 300w, https://www.ekol.com/wp-content/uploads/2025/07/ipra_odul_foto-1024x1024.webp 1024w, https://www.ekol.com/wp-content/uploads/2025/07/ipra_odul_foto-150x150.webp 150w, https://www.ekol.com/wp-content/uploads/2025/07/ipra_odul_foto-768x768.webp 768w, https://www.ekol.com/wp-content/uploads/2025/07/ipra_odul_foto-140x140.webp 140w, https://www.ekol.com/wp-content/uploads/2025/07/ipra_odul_foto-100x100.webp 100w, https://www.ekol.com/wp-content/uploads/2025/07/ipra_odul_foto-500x500.webp 500w, https://www.ekol.com/wp-content/uploads/2025/07/ipra_odul_foto-350x350.webp 350w, https://www.ekol.com/wp-content/uploads/2025/07/ipra_odul_foto-1000x1000.webp 1000w, https://www.ekol.com/wp-content/uploads/2025/07/ipra_odul_foto-800x800.webp 800w"
+                                  sizes="(max-width: 1080px) 100vw, 1080px" />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="wpb_text_column wpb_content_element ">
+                          <div class="wpb_wrapper">{{ content }}</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--/post-content-->
+        </div>
+        <!--/inner-wrap-->
+      </article>
+    </div>
+    <!--/post-area-->
+  </div>
+  <!--/row-->
+  <div class="row">
+    <div class="row vc_row-fluid full-width-section related-post-wrap" data-using-post-pagination="true" data-midnight="dark">
+      <div class="row-bg-wrap">
+        <div class="row-bg"></div>
+      </div>
+      <h3 class="related-title ">Diğer Bloglar</h3>
+      <div class="row span_12 blog-recent related-posts columns-3" data-style="material" data-color-scheme="light">
+        {% for post in collections.posts %}
+        <div class="col span_4">
+          <div class="inner-wrap post-72665 post type-post status-publish format-standard has-post-thumbnail category-basin-bultenleri">
+            <a href="{{ post.url }}" class="img-link">
+              <span class="post-featured-img">
+                <img
+                  class="nectar-lazy skip-lazy"
+                  height="403"
+                  width="600"
+                  alt=""
+                  data-nectar-img-src="https://www.ekol.com/wp-content/uploads/2025/06/SupplyChainExcellenceAwardsEkolHenkel-600x403.jpg"
+                  src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%20600%20403'%2F%3E" />
+              </span>
+            </a>
+            <a class="entire-meta-link" href="{{post.url}}">
+              <span class="screen-reader-text">{{ post.data.title}}</span>
+            </a>
+            <div class="article-content-wrap">
+              <div class="post-header">
+                <span class="meta"></span>
+                <h3 class="title">{{ post.data.title }}</h3>
+                <div class="excerpt">{{ post.templateContent | strip_html | truncate: 100 }}</div>
+              </div>
+              <!--/post-header-->
+              <div class="grav-wrap">
+                <img
+                  alt="Mert OKUR"
+                  src="https://secure.gravatar.com/avatar/9047757a7437c7e509921c6bb8ab1d452d5cea91d5f9f87fdb8f50790a3f8b2a?s=70&#038;r=g"
+                  srcset="https://secure.gravatar.com/avatar/9047757a7437c7e509921c6bb8ab1d452d5cea91d5f9f87fdb8f50790a3f8b2a?s=140&#038;r=g 2x"
+                  class="avatar avatar-70 photo"
+                  height="70"
+                  width="70"
+                  decoding="async" />
+                <div class="text">
+                  <p>{{ post.data.author }}</p>
+                  <span>{{ post.date | date: "%d.%m.%Y" }}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <!--/row-->
+</div>

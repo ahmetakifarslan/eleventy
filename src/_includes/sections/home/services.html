@@ -1,0 +1,39 @@
+<div id="fws_69329f231776c"  data-column-margin="default" data-midnight="dark" data-top-percent="6%" data-bottom-percent="6%"  class="wpb_row vc_row-fluid vc_row full-width-content vc_row-o-equal-height vc_row-flex vc_row-o-content-top  right_padding_8pct left_padding_8pct nectar-overflow-hidden top_padding_tablet_10pct bottom_padding_tablet_15pct left_padding_tablet_8pct"  style="padding-top: calc(100vw * 0.06); padding-bottom: calc(100vw * 0.06); ">
+    <div class="row-bg-wrap" data-bg-animation="none" data-bg-animation-delay="" data-bg-overlay="false">
+        <div class="inner-wrap row-bg-layer" >
+            <div class="row-bg viewport-desktop"  style=""></div>
+        </div>
+    </div>
+    <div class="row_col_wrap_12 col span_12 dark left">
+        <div  class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding el_spacing_0px inherit_tablet inherit_phone "  data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0" >
+            <div class="vc_column-inner" >
+            <div class="wpb_wrapper">
+                <div class="wpb_text_column wpb_content_element">
+                    <div class="wpb_wrapper">
+                        <h5>{{ title }}</h5>
+                    </div>
+                </div>
+                <div class="nectar-split-heading  font_size_3vw  bosluk" data-align="default" data-m-align="inherit" data-text-effect="default" data-animation-type="line-reveal-by-space" data-animation-delay="0" data-animation-offset="" data-m-rm-animation="" data-stagger="true" data-custom-font-size="true" style="font-size: 3vw; line-height: 3.3vw;">
+                    <h2 style="max-width: 80%; color: #000000;">{{ subTitle }}</h2>
+                </div> 
+                {% capture fancyBoxes %}
+                {% for page in collections.services %}
+                        <div class="cell">
+                            <div class="inner-wrap-outer">
+                                <div class="inner-wrap">
+                                    {% include "components/fancy-box.html" 
+                                        title: page.data.pageHeader 
+                                        imgUrl: page.data.headerImgSrc 
+                                        link: page.url 
+                                    %}
+                                </div>
+                            </div>
+                        </div>
+                {% endfor %}
+                {% endcapture %}
+                {% include "components/carousel.html" carouselItems: fancyBoxes %}
+            </div>
+            </div>
+        </div>
+    </div>
+</div>

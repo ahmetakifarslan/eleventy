@@ -1,0 +1,65 @@
+<div id="slide-out-widget-area-bg" class="slide-out-from-right solid"></div>
+<div id="slide-out-widget-area" role="dialog" aria-modal="true" aria-label="Off Canvas Menu" class="slide-out-from-right" data-dropdown-func="default" data-back-txt="Back">
+  <div class="inner-wrap">
+    <div class="inner" data-prepend-menu-mobile="true">
+      <a class="slide_out_area_close" href="#">
+        <span class="screen-reader-text">Close Menu</span>
+        <span class="close-wrap">
+          <span class="close-line close-line1" role="presentation"></span>
+          <span class="close-line close-line2" role="presentation"></span>
+        </span>
+      </a>
+      <div class="off-canvas-menu-container mobile-only" role="navigation">
+        <ul class="menu">
+          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-icon menu-item-336">{% include "components/get-contact-button.html" %}</li>
+        </ul>
+        <ul class="menu secondary-header-items"></ul>
+      </div>
+      <div class="off-canvas-menu-container" role="navigation">
+        {% assign navigation = collections.all | eleventyNavigation | byLang: lang %}
+
+        <ul class="menu">
+          {% for entry in navigation %} {% assign hasChildren = entry.children.size > 0 %}
+          <li
+            id="menu-item-{{ entry.key | default: forloop.index }}"
+            class="menu-item menu-item-type-post_type menu-item-object-page {% if hasChildren %}menu-item-has-children{% endif %} {% if page.url == entry.url %}current-menu-item current_page_item{% endif %} menu-item-{{ entry.key | default: forloop.index }}">
+            <a href="{% if hasChildren %}#{% else %}{{ entry.url }}{% endif %}" {% if hasChildren %}aria-haspopup="true" aria-expanded="false" {% endif %}>{{ entry.title }}</a>
+            {% if hasChildren %}
+            <ul class="sub-menu">
+              {% for child in entry.children %}
+              <li id="menu-item-{{ child.key | default: entry.key }}-{{ forloop.index }}" class=" menu-item menu-item-type-custom menu-item-object-custom {% if page.url == child.url %}current-menu-item{% endif %} menu-item-{{ child.key | default: entry.key }}-{{ forloop.index }}">
+                <a href="{{ child.url }}">{{ child.title }}</a>
+              </li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <div class="bottom-meta-wrap">
+      <ul class="off-canvas-social-links">
+        <li>
+          <a target="_blank" rel="noopener" href="{{globals.socials.twitter}}">
+            <span class="screen-reader-text">x-twitter</span>
+            <i class="icon-salient-x-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" rel="noopener" href="{{globals.socials.linkedin}}">
+            <span class="screen-reader-text">linkedin</span>
+            <i class="fa fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" rel="noopener" href="{{globals.socials.instagram}}">
+            <span class="screen-reader-text">instagram</span>
+            <i class="fa fa-instagram"></i>
+          </a>
+        </li>
+      </ul>
+      <p class="bottom-text" data-has-desktop-social="true">SOSYAL MEDYADA {{ globals.brandTitle | upper }}</p>
+    </div>
+  </div>
+</div>

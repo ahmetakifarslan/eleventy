@@ -1,0 +1,77 @@
+---
+pageConfig:
+  type: 1
+lang: tr
+layout: layouts/main-layout.html
+title: Kariyer
+slogan: 
+  first: Senin potansiyelin
+  emphatized: bizim 
+  last: geleceğimiz.
+uploadCVButtonText: CV Yükle
+careerSection:
+  title: Adeca’da herkes bir yol arkadaşıdır.
+  subTitle: Biz sadece lojistik yapmıyor, iz bırakıyoruz. Eğer sen de değerlerimize gönül verir, yaratıcı fikirlerinle fark yaratmak ve uzun soluklu bir yolculuğa çıkmak istiyorsan… Hoş geldin.
+paragraphs: 
+    - Adeca Logistics’te başarı, birlikte güçlü olduğumuzda anlam kazanır.
+    - Bizim için her ekip arkadaşı; sadece bir çalışan değil, markamızı geleceğe taşıyan en değerli yol arkadaşıdır.
+    - Potansiyelin keşfedildiği, fikirlerin değer gördüğü ve yeteneklerin büyüdüğü bir çalışma kültürü yaratıyoruz. Çünkü biliyoruz ki gerçek fark; tutkuyla çalışan, gelişime açık ve kendini ait hisseden ekiplerle ortaya çıkar.
+    - Adeca’da herkes kendi kariyer yolunun mimarıdır. Eğitim, mentorluk ve gelişim fırsatlarıyla çalışanlarımızın yanında olur; hedeflerine adım adım yaklaşmaları için destek veririz. Düzenli geri bildirim kültürümüzle başarıları görünür kılar, gelişimi sürdürülebilir hale getiririz.
+    - Burada her ses duyulur, her başarı kutlanır, her yetenek önemlidir.
+betterYou:
+  title: Senin hikayen burada başlıyor.
+
+toggles:
+  - title: "Birlikte Daha Güçlüyüz"
+    content: "Adeca’da başarı, tek başına değil, birlikte hareket ettiğimizde anlam kazanır. Her ekip arkadaşımız, markamızı geleceğe taşıyan en değerli yol arkadaşıdır."
+
+  - title: "Senin Potansiyelin, Bizim Geleceğimiz"
+    content: "Potansiyelin keşfedildiği, fikirlerin değer gördüğü ve yeteneklerin büyüdüğü bir kültür yaratıyoruz. Tutkuyla çalışan, gelişime açık ve kendini ait hisseden ekiplerle gerçek farkı ortaya çıkarıyoruz."
+
+  - title: "Kariyer Yolunun Mimarı Sensin"
+    content: "Adeca’da herkes kendi kariyerinin mimarıdır. Eğitim, mentorluk ve düzenli geri bildirimle hedeflerine adım adım yaklaşman için yanındayız. Başarılarını kutlar, gelişimini sürdürülebilir kılarız."
+
+  - title: "Her Ses Duyulur, Her Yetenek Önemlidir"
+    content: "Burada fikirlerin özgürce ifade edilir, başarılar kutlanır, her birey değer görür. Senin sesin de duyulmak için burada."
+
+  - title: "Öğrenme Asla Bitmez"
+    content: "Başarımızın temeli bilgidir. Yeni katılanlardan deneyimli çalışanlarımıza kadar herkes için sürekli eğitim ve gelişim fırsatları sunuyoruz. Bilgi arttıkça tutku, tutku arttıkça hedefler büyür."
+
+  - title: "Girişimci Ruha İhtiyacımız Var"
+    content: "Çözüm odaklı, dinamik ve yenilikçi düşünen çalışma arkadaşları arıyoruz. Adeca’da girişimci ruh, enerjimizi ve sektördeki öncülüğümüzü canlı tutan en büyük gücümüzdür."
+
+tags: career
+eleventyNavigation:
+  key: tr-career
+  title: Kariyer
+  order: 4
+---
+
+
+
+
+<div class="container main-content" role="main" style="--nectar-sticky-top-distance: 165px;">
+  <div class="row">
+    
+    {% include "sections/career/header.html" %}
+
+    {% include "sections/career/better-you.html" paragraphs: paragraphs %}
+
+    <!-- {% include "sections/career/creative-services.html" %} -->
+
+    <!-- {% include "sections/career/values.html" %} -->
+
+    <!-- {% include "sections/career/services.html" %} -->
+
+    {% include "sections/career/career.html" careerSectionTitle: careerSection.title careerSectionSubTitle: careerSection.subTitle %}
+    <br>
+    <br>
+    <br>
+    <!-- {% include "sections/career/stories.html" %} -->
+
+    <!-- {% include "sections/career/jobs.html" %} -->
+    
+    <!-- {% include "sections/career/follow-us.html" %}  -->
+
+  </div>
+</div>
